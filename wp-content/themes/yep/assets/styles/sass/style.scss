@@ -1,0 +1,27 @@
+@import 'reset';
+
+body {
+    header{
+        background-color: cornflowerblue;
+        nav {
+            ul{
+                list-style-type: none;
+                display:grid;
+                grid-template-columns: repeat;
+                li{
+                    a{
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+
+    main {
+
+    }
+
+    footer {
+
+    }
+}
