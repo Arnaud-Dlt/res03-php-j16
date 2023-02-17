@@ -35,35 +35,30 @@
             <section>
                 <h3>Yepfolio en quelques mots</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut alias ipsam deleniti possimus impedit, fuga maxime doloremque a facilis voluptatum quisquam veniam vero corrupti aspernatur quia quod? Corrupti, id dolorem?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A ab quia id vero maxime nemo corrupti deserunt, blanditiis voluptatum tempora neque voluptatibus repellendus ad consequuntur? Cumque perspiciatis voluptates illum enim?</p>
             </section>
             <section>
                 <h2>Mes derniers Projets</h2>
-
-                <article>
-                    <h3>Application santé</h3>
-                    <h4>Pharmacie de Maurepas</h4>
-                </article>
-
-                <article>
-                    <h3>Site e-commerce</h3>
-                    <h4>Librairie l'écume des jours</h4>
-                </article>
-
-                <article>
-                    <h3>Site vitrine</h3>
-                    <h4>Boulangerie Galtier</h4>
-                </article>
-
-                <article>
-                    <h3>Site institutionnel</h3>
-                    <h4>Mairie de Ploutruc</h4>
-                </article>
-                
-                <article>
-                    <h3>Site promotionnel</h3>
-                    <h4>Festival des choses</h4>
-                </article>
-
+                    <article>
+                        <h3>Application santé</h3>
+                        <h4>Pharmacie de Maurepas</h4>
+                    </article>
+                    <article>
+                        <h3>Site e-commerce</h3>
+                        <h4>Librairie l'écume des jours</h4>
+                    </article>
+                    <article>
+                        <h3>Site vitrine</h3>
+                        <h4>Boulangerie Galtier</h4>
+                    </article>
+                    <article>
+                        <h3>Site institutionnel</h3>
+                        <h4>Mairie de Ploutruc</h4>
+                    </article>
+                    <article>
+                        <h3>Site promotionnel</h3>
+                        <h4>Festival des choses</h4>
+                    </article>
             </section>
         </main>
 
@@ -73,31 +68,28 @@
 
                 <fieldset>
                     <label>Prénom + Nom *</label>
+                </fieldset>
+                <fieldset>
                     <input type="text" name="name">
                 </fieldset>
 
                 <fieldset>
                     <label>Email *</label>
+                </fieldset>
+                <fieldset>
                     <input type="text" name="email">
                 </fieldset>
 
                 <fieldset>
                     <label>Message</label>
-                    <input type="text" name="message">
+                </fieldset>
+                <fieldset>
+                    <textarea type="text" name="message"></textarea>
                 </fieldset>
 
-                <input type="submit" name="contact">
+                <input type="submit" name="contact" value="Contacter" id="contactButton">
             </form>
         </footer>
-
-
-
-
-
-
-
-
-
 
         <?php wp_footer(); ?>
     </body>

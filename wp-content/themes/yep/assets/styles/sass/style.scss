@@ -8,73 +8,253 @@ Author URI: https://github.com/Arnaud-Dlt?tab=repositories
   
 */
 
-
-
 @import 'reset';
 
-body {
+html {
+    font-family: Montserrat, sans-serif;
+    overflow-x: hidden;
 
-    header{
-        background-color: rgb(16, 21, 94);
-        height:10vh;
-        nav {
-            ul{
-                list-style-type: none;
-                display:flex;
-                flex-direction: row;
-                justify-content: space-around;
-                li {
-                    a {
-                        color:#fff;
-                        text-decoration: none;
+    body {
+
+        header {
+            background-color: rgb(16, 21, 94);
+            height: 10vh;
+            display: grid;
+            grid-template-columns: 15vw 85vw;
+
+            nav {
+                grid-column: 2/3;
+                
+                ul {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    list-style-type: none;
+
+                    li {
+                        a {
+                            color: #fff;
+                            text-decoration: none;
+                        }
                     }
                 }
             }
         }
-    }
 
-    main {
-        &>section:first-of-type {
-            width:100vw;
-            background-color: #000;
-            text-align:center;
-                h1{
+        main {
+            &>section:first-of-type {
+                width: 100vw;
+                background-color: #000;
+                text-align: center;
+
+                h1 {
                     color: #fff;
                     font-size: 2rem;
-                    font-weight: 900;
+                    font-weight: bold;
                     text-transform: uppercase;
                     padding-top: 5vh;
-                    padding-bottom:2vh;
+                    padding-bottom: 2vh;
                 }
-                h2{
-                    color:crimson;
+
+                h2 {
+                    color: crimson;
                     font-size: 1.5rem;
-                    font-weight:700;
+                    font-weight: 700;
                     text-transform: uppercase;
                 }
+
                 figure {
-                    width:100%;
+                    width: 100%;
+
                     img {
-                        width:100%;
+                        width: 100%;
                     }
                 }
-            
-        }
-        &>section:nth-of-type(2){
-            background-color: cadetblue;
-            color: #fff;
-        }
 
-        &>section:last-of-type {
-            h2 {
-                color:cadetblue;
+            }
+
+            &>section:nth-of-type(2) {
+                background-color: cadetblue;
+                color: #fff;
+                padding: 8vh;
+
+                h3 {
+                    text-align: center;
+                    font-size: 1.5rem;
+                    margin-bottom: 2vh;
+                }
+
+                p {
+                    margin-bottom: 2vh;
+                }
+            }
+
+            &>section:last-of-type {
+                padding: 5vh;
+                display:grid;
+                grid-template-columns: repeat(3,1fr);
+                column-gap: 2vw;
+                grid-template-rows: 1fr, 2fr;
+                row-gap: 2vh;
+
+                h2 {
+                    grid-row: 1/2;
+                    grid-column: 1/4;
+                    color: cadetblue;
+                    text-align: center;
+                    font-size: 1.5rem;
+                    margin-bottom: 5vh;
+                }
+
+
+                >article:first-of-type {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: end;
+                    height: 20vh;
+
+                    h3 {
+                        color: crimson;
+                        font-size: 1.4rem;
+                        font-weight: 500;
+                    }
+
+                    h4 {
+                        color: #fff;
+                        font-size: 1.2rem;
+                        font-weight: 400;
+                    }
+                    background-image: url("https://cdn.mesoigner.fr/uploads/ckeditor/1096/ArtKowel%20-%202015-10-30%20-%200081-2.jpeg");
+                    background-size: cover;
+                    background-position: bottom;
+                }
+
+                >article:nth-of-type(2) {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: end;
+                    height: 20vh;
+
+                    h3 {
+                        color: crimson;
+                        font-size: 1.4rem;
+                        font-weight: 500;
+                    }
+
+                    h4 {
+                        color: #fff;
+                        font-size: 1.2rem;
+                        font-weight: 400;
+                    }
+                    background-image: url("https://alivreouvertdotnet.files.wordpress.com/2017/02/bookish1.jpg?w=700&h=312&crop=1");
+                    background-size: cover;
+                }
+
+                >article:nth-of-type(3) {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: end;
+                    height: 20vh;
+
+                    h3 {
+                        color: crimson;
+                        font-size: 1.4rem;
+                        font-weight: 500;
+                    }
+
+                    h4 {
+                        color: #fff;
+                        font-size: 1.2rem;
+                        font-weight: 400;
+                    }
+                    background-image: url("https://www.pays-saint-flour.fr/wp-content/uploads/wpetourisme/9013511-diaporama.jpg");
+                    background-size: cover;
+                }
+
+                >article:nth-of-type(4) {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: end;
+                    height: 20vh;
+
+                    h3 {
+                        color: crimson;
+                        font-size: 1.4rem;
+                        font-weight: 500;
+                    }
+
+                    h4 {
+                        color: #fff;
+                        font-size: 1.2rem;
+                        font-weight: 400;
+                    }
+                    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Paris_mairie_XIX.jpg/1200px-Paris_mairie_XIX.jpg");
+                    background-size: cover;
+                    background-position: bottom;
+                }
+
+                >article:nth-of-type(5) {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: end;
+                    height: 20vh;
+
+                    h3 {
+                        color: crimson;
+                        font-size: 1.4rem;
+                        font-weight: 500;
+                    }
+
+                    h4 {
+                        color: #fff;
+                        font-size: 1.2rem;
+                        font-weight: 400;
+                    }
+                    background-image: url("https://alivreouvertdotnet.files.wordpress.com/2017/02/bookish1.jpg?w=700&h=312&crop=1");
+                    background-size: cover;
+                }
             }
         }
-    }
 
-    footer {
-        text-align:center;
-        background-color: #5c2fc5;
-        color:#fff;
+        footer {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            padding: 2vh;
+            background-color: #5c2fc5;
+            color: #fff;
+
+            h3 {
+                font-size: 1.5rem;
+                grid-column: 2/3;
+                text-align: center;
+                margin-bottom: 5vh;
+            }
+
+            form {
+                grid-column: 2/3;
+
+                fieldset {
+                    margin-bottom: 2vh;
+
+                    input {
+                        width: 30vw
+                    }
+
+                    textarea {
+                        width: 30vw;
+                    }
+
+                }
+            }
+
+            #contactButton {
+                margin-left: 10vw;
+                padding: 2vh;
+                border: 2px solid #fff;
+                background-color: #5c2fc5;
+                color: #fff;
+                width: 25vh;
+            }
+        }
     }
 }
