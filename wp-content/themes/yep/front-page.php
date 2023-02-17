@@ -1,6 +1,8 @@
 <?php  
-    $menuItems = getNavigationMenu();  
+    $menuItems = getNavigationMenu(); 
+    $data = getHomepageData();   
 ?>
+
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -22,10 +24,15 @@
             </figure>
             <nav>
                 <ul>
-                    <li><a href="">Accueil</a></li>
-                    <li><a href="">A Propos</a></li>
-                    <li><a href="">Mes Projets</a></li>
-                    <li><a href="">Me Contacter</a></li>
+                    <?php foreach($menuItems as $item) { ?>  
+                        <li>  
+                            <a href="<?= $item->url ?>">  
+                            <?= $item->title ?>  
+                            </a>  
+                        </li>  
+                    <?php  
+                        }  
+                    ?>
                 </ul>
             </nav>
         </header>
@@ -35,10 +42,11 @@
                 <h1>Yepfolio</h1>
                 <h2>Développement web et mobile</h2>
             </section>
-            <section>
-                <h3>Yepfolio en quelques mots</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut alias ipsam deleniti possimus impedit, fuga maxime doloremque a facilis voluptatum quisquam veniam vero corrupti aspernatur quia quod? Corrupti, id dolorem?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A ab quia id vero maxime nemo corrupti deserunt, blanditiis voluptatum tempora neque voluptatibus repellendus ad consequuntur? Cumque perspiciatis voluptates illum enim?</p>
+            <section id="about">  
+                <h3><?= $data["a-propos"]["titre"] ?></h2>  
+                    <p>  
+                        <?= $data["a-propos"]["contenu"] ?>  
+                    </p>  
             </section>
             <section>
                 <h2>Mes derniers Projets</h2>
