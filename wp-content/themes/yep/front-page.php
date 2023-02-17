@@ -1,3 +1,6 @@
+<?php  
+    $menuItems = getNavigationMenu();  
+?>
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -14,6 +17,9 @@
     </head>
     <body>
         <header>
+            <figure>
+                <img src="wp-content/themes/yep/assets/img/Gaellan-Logo.svg">
+            </figure>
             <nav>
                 <ul>
                     <li><a href="">Accueil</a></li>
@@ -28,9 +34,6 @@
             <section>
                 <h1>Yepfolio</h1>
                 <h2>Développement web et mobile</h2>
-                <figure>
-                    <img src="https://images-ext-1.discordapp.net/external/fS-4AuqYH0J6Fseb1sQVpY3Z6DSk77nM8lSHCEpvhWA/https/www.evinux.org/wp-content/uploads/2021/09/pc-portable-clavier-ecran-lumineux-840x400.jpg" alt="">
-                </figure>
             </section>
             <section>
                 <h3>Yepfolio en quelques mots</h3>

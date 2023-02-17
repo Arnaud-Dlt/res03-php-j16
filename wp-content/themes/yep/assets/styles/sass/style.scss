@@ -19,16 +19,27 @@ html {
         header {
             background-color: rgb(16, 21, 94);
             height: 10vh;
+            width:100vw;
             display: grid;
             grid-template-columns: 15vw 85vw;
+            
+            &>figure{
+                grid-column: 1/2;
+                align-self: center;
+                justify-self: center;
+                width:50%;
+            }
 
             nav {
                 grid-column: 2/3;
+                display:flex;
+                text-transform: uppercase;
                 
                 ul {
                     display: flex;
                     flex-direction: row;
-                    justify-content: space-around;
+                    gap:8vw;
+                    align-self: center;
                     list-style-type: none;
 
                     li {
@@ -44,7 +55,10 @@ html {
         main {
             &>section:first-of-type {
                 width: 100vw;
-                background-color: #000;
+                height:100vh;
+                background-image: url("assets/img/home-computer.jpg");
+                background-size: cover;
+                background-position: center;
                 text-align: center;
 
                 h1 {
@@ -111,7 +125,7 @@ html {
                     display: flex;
                     flex-direction: column;
                     justify-content: end;
-                    height: 20vh;
+                    height: 40vh;
 
                     h3 {
                         color: crimson;
@@ -124,16 +138,15 @@ html {
                         font-size: 1.2rem;
                         font-weight: 400;
                     }
-                    background-image: url("https://cdn.mesoigner.fr/uploads/ckeditor/1096/ArtKowel%20-%202015-10-30%20-%200081-2.jpeg");
+                    background-image: url("assets/img/pharmacy.jpeg");
                     background-size: cover;
-                    background-position: bottom;
                 }
 
                 >article:nth-of-type(2) {
                     display: flex;
                     flex-direction: column;
                     justify-content: end;
-                    height: 20vh;
+                    height: 40vh;
 
                     h3 {
                         color: crimson;
@@ -146,7 +159,7 @@ html {
                         font-size: 1.2rem;
                         font-weight: 400;
                     }
-                    background-image: url("https://alivreouvertdotnet.files.wordpress.com/2017/02/bookish1.jpg?w=700&h=312&crop=1");
+                    background-image: url("assets/img/librairie.jpeg");
                     background-size: cover;
                 }
 
@@ -154,7 +167,7 @@ html {
                     display: flex;
                     flex-direction: column;
                     justify-content: end;
-                    height: 20vh;
+                    height: 40vh;
 
                     h3 {
                         color: crimson;
@@ -167,7 +180,7 @@ html {
                         font-size: 1.2rem;
                         font-weight: 400;
                     }
-                    background-image: url("https://www.pays-saint-flour.fr/wp-content/uploads/wpetourisme/9013511-diaporama.jpg");
+                    background-image: url("assets/img/boulangerie.jpeg");
                     background-size: cover;
                 }
 
@@ -175,7 +188,7 @@ html {
                     display: flex;
                     flex-direction: column;
                     justify-content: end;
-                    height: 20vh;
+                    height: 40vh;
 
                     h3 {
                         color: crimson;
@@ -188,16 +201,15 @@ html {
                         font-size: 1.2rem;
                         font-weight: 400;
                     }
-                    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Paris_mairie_XIX.jpg/1200px-Paris_mairie_XIX.jpg");
+                    background-image: url("assets/img/mairie.jpeg");
                     background-size: cover;
-                    background-position: bottom;
                 }
 
                 >article:nth-of-type(5) {
                     display: flex;
                     flex-direction: column;
                     justify-content: end;
-                    height: 20vh;
+                    height: 40vh;
 
                     h3 {
                         color: crimson;
@@ -210,7 +222,7 @@ html {
                         font-size: 1.2rem;
                         font-weight: 400;
                     }
-                    background-image: url("https://alivreouvertdotnet.files.wordpress.com/2017/02/bookish1.jpg?w=700&h=312&crop=1");
+                    background-image: url("assets/img/festival.jpeg");
                     background-size: cover;
                 }
             }
