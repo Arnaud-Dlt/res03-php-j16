@@ -1,15 +1,31 @@
+/*!  
+  
+Theme Name: Yep  
+Description: Thème WordPress custom pour Prénom Nom  
+Version: 1.0  
+Author: Arnaud Deletre 
+Author URI: https://github.com/Arnaud-Dlt?tab=repositories 
+  
+*/
+
+
+
 @import 'reset';
 
 body {
+
     header{
-        background-color: cornflowerblue;
+        background-color: rgb(16, 21, 94);
+        height:10vh;
         nav {
             ul{
                 list-style-type: none;
-                display:grid;
-                grid-template-columns: repeat;
-                li{
-                    a{
+                display:flex;
+                flex-direction: row;
+                justify-content: space-around;
+                li {
+                    a {
+                        color:#fff;
                         text-decoration: none;
                     }
                 }
@@ -18,10 +34,47 @@ body {
     }
 
     main {
+        &>section:first-of-type {
+            width:100vw;
+            background-color: #000;
+            text-align:center;
+                h1{
+                    color: #fff;
+                    font-size: 2rem;
+                    font-weight: 900;
+                    text-transform: uppercase;
+                    padding-top: 5vh;
+                    padding-bottom:2vh;
+                }
+                h2{
+                    color:crimson;
+                    font-size: 1.5rem;
+                    font-weight:700;
+                    text-transform: uppercase;
+                }
+                figure {
+                    width:100%;
+                    img {
+                        width:100%;
+                    }
+                }
+            
+        }
+        &>section:nth-of-type(2){
+            background-color: cadetblue;
+            color: #fff;
+        }
 
+        &>section:last-of-type {
+            h2 {
+                color:cadetblue;
+            }
+        }
     }
 
     footer {
-
+        text-align:center;
+        background-color: #5c2fc5;
+        color:#fff;
     }
 }

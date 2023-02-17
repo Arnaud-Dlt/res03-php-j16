@@ -28,13 +28,16 @@
             <section>
                 <h1>Yepfolio</h1>
                 <h2>Développement web et mobile</h2>
+                <figure>
+                    <img src="https://images-ext-1.discordapp.net/external/fS-4AuqYH0J6Fseb1sQVpY3Z6DSk77nM8lSHCEpvhWA/https/www.evinux.org/wp-content/uploads/2021/09/pc-portable-clavier-ecran-lumineux-840x400.jpg" alt="">
+                </figure>
             </section>
             <section>
                 <h3>Yepfolio en quelques mots</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut alias ipsam deleniti possimus impedit, fuga maxime doloremque a facilis voluptatum quisquam veniam vero corrupti aspernatur quia quod? Corrupti, id dolorem?</p>
             </section>
             <section>
-                <h3>Mes derniers Projets</h3>
+                <h2>Mes derniers Projets</h2>
 
                 <article>
                     <h3>Application santé</h3>
