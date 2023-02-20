@@ -50,6 +50,7 @@
             </section>
             <section>
                 <h2>Mes derniers Projets</h2>
+                <?php var_dump(getProjects($projects))?>
                     <article>
                         <h3>Application santé</h3>
                         <h4>Pharmacie de Maurepas</h4>
