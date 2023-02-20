@@ -233,19 +233,19 @@ html body footer h3 {
   text-align: center;
   margin-bottom: 5vh;
 }
-html body footer form {
+html body footer #contact {
   grid-column: 2/3;
 }
-html body footer form fieldset {
+html body footer #contact fieldset {
   margin-bottom: 2vh;
 }
-html body footer form fieldset input {
+html body footer #contact fieldset input {
   width: 30vw;
 }
-html body footer form fieldset textarea {
+html body footer #contact fieldset textarea {
   width: 30vw;
 }
-html body footer #contactButton {
+html body footer #contact #sub-btn {
   margin-left: 10vw;
   padding: 2vh;
   border: 2px solid #fff;

@@ -51,45 +51,23 @@
             <section id="projects">
                 <h2>Mes derniers Projets</h2>
                 
-                <?php foreach($data['projets'] as $post){ ?>
+                <?php foreach($data['projets'] as $projet){ ?>
                     <article data-img="<?= $projet["image"]["url"] ?>">
-                        <h3><?= $post['category']?></h3>
-                        <h4><?= $post['data']->post_title ?></h4>
+                        <h3><?= $projet['category']?></h3>
+                        <h4><?= $projet['data']->post_title ?></h4>
                     </article>
                 <?php }?>
             </section>
         </main>
 
         <footer>
-            <h3>Me contacter</h3>
-            <form>
-
-                <fieldset>
-                    <label>Prénom + Nom *</label>
-                </fieldset>
-                <fieldset>
-                    <input type="text" name="name">
-                </fieldset>
-
-                <fieldset>
-                    <label>Email *</label>
-                </fieldset>
-                <fieldset>
-                    <input type="text" name="email">
-                </fieldset>
-
-                <fieldset>
-                    <label>Message</label>
-                </fieldset>
-                <fieldset>
-                    <textarea type="text" name="message"></textarea>
-                </fieldset>
-
-                <input type="submit" name="contact" value="Contacter" id="contactButton">
-            </form>
+            <section id="contact">  
+                <h3>Me contacter</h3>  
+                <?php echo do_shortcode("[contact-form-7 id='83' title='Formulaire de Contact']"); ?>  
+            </section>
         </footer>
         
         <?php wp_footer(); ?>
-        <script type ="text/javascript" src="index.js"></script>
+        <script type ="text/javascript" src="<?php echo get_template_directory_uri(); ?>/index.js"></script>
     </body>
 </html>
