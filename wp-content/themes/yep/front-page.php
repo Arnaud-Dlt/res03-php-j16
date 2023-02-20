@@ -63,7 +63,7 @@
         <footer>
             <section id="contact">  
                 <h3>Me contacter</h3>  
-                <?php echo do_shortcode("[contact-form-7 id='83' title='Formulaire de Contact']"); ?>  
+                <?php echo do_shortcode("[contact-form-7 id='83' title='Contact-Accueil']"); ?>  
             </section>
         </footer>
         

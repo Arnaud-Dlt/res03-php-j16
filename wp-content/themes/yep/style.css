@@ -227,31 +227,29 @@ html body footer {
   background-color: #5c2fc5;
   color: #fff;
 }
-html body footer h3 {
-  font-size: 1.5rem;
-  grid-column: 2/3;
-  text-align: center;
-  margin-bottom: 5vh;
-}
 html body footer #contact {
   grid-column: 2/3;
+  justify-self: center;
 }
-html body footer #contact fieldset {
+html body footer #contact h3 {
+  font-size: 2rem;
+  margin-bottom: 5vh;
+  text-align: center;
+}
+html body footer #contact div form label {
+  display: flex;
+  flex-direction: column;
+}
+html body footer #contact div form label span {
   margin-bottom: 2vh;
-}
-html body footer #contact fieldset input {
-  width: 30vw;
-}
-html body footer #contact fieldset textarea {
-  width: 30vw;
+  margin-top: 2vh;
 }
 html body footer #contact #sub-btn {
-  margin-left: 10vw;
   padding: 2vh;
   border: 2px solid #fff;
   background-color: #5c2fc5;
   color: #fff;
-  width: 25vh;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

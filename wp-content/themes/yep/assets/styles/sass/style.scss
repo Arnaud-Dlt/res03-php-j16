@@ -229,35 +229,37 @@ html {
             padding: 2vh;
             background-color: #5c2fc5;
             color: #fff;
-
-            h3 {
-                font-size: 1.5rem;
-                grid-column: 2/3;
-                text-align: center;
-                margin-bottom: 5vh;
-            }
             
             #contact{
                 grid-column: 2/3;
-                fieldset {
-                    margin-bottom: 2vh;
+                justify-self:center;
 
-                    input {
-                        width: 30vw
+                h3 {
+                    font-size:2rem;
+                    margin-bottom: 5vh;
+                    text-align:center;
+                }
+
+                div {
+                    form {
+                        
+                        label {
+                            display:flex;
+                            flex-direction: column;
+                            
+                            span {
+                                margin-bottom: 2vh;
+                                margin-top: 2vh;
+                            }
+                        }
                     }
-
-                    textarea {
-                        width: 30vw;
-                    }
-
                 }
                 #sub-btn {
-                    margin-left: 10vw;
                     padding: 2vh;
                     border: 2px solid #fff;
                     background-color: #5c2fc5;
                     color: #fff;
-                    width: 25vh;
+                    width:100%;
                 }
             }
         }
