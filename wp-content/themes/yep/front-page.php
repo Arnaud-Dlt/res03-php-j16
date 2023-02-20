@@ -48,29 +48,15 @@
                         <?= $data["a-propos"]["contenu"] ?>  
                     </p>  
             </section>
-            <section>
+            <section id="projects">
                 <h2>Mes derniers Projets</h2>
-                <?php var_dump(getProjects($projects))?>
-                    <article>
-                        <h3>Application santé</h3>
-                        <h4>Pharmacie de Maurepas</h4>
+                
+                <?php foreach($data['projets'] as $post){ ?>
+                    <article data-img="<?= $projet["image"]["url"] ?>">
+                        <h3><?= $post['category']?></h3>
+                        <h4><?= $post['data']->post_title ?></h4>
                     </article>
-                    <article>
-                        <h3>Site e-commerce</h3>
-                        <h4>Librairie l'écume des jours</h4>
-                    </article>
-                    <article>
-                        <h3>Site vitrine</h3>
-                        <h4>Boulangerie Galtier</h4>
-                    </article>
-                    <article>
-                        <h3>Site institutionnel</h3>
-                        <h4>Mairie de Ploutruc</h4>
-                    </article>
-                    <article>
-                        <h3>Site promotionnel</h3>
-                        <h4>Festival des choses</h4>
-                    </article>
+                <?php }?>
             </section>
         </main>
 
@@ -102,7 +88,8 @@
                 <input type="submit" name="contact" value="Contacter" id="contactButton">
             </form>
         </footer>
-
+        
         <?php wp_footer(); ?>
+        <script type ="text/javascript" src="index.js"></script>
     </body>
 </html>

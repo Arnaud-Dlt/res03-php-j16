@@ -140,7 +140,6 @@ html body main > section:last-of-type > article:first-of-type {
   flex-direction: column;
   justify-content: end;
   height: 40vh;
-  background-image: url("assets/img/pharmacy.jpeg");
   background-size: cover;
 }
 html body main > section:last-of-type > article:first-of-type h3 {
@@ -158,7 +157,6 @@ html body main > section:last-of-type > article:nth-of-type(2) {
   flex-direction: column;
   justify-content: end;
   height: 40vh;
-  background-image: url("assets/img/librairie.jpeg");
   background-size: cover;
 }
 html body main > section:last-of-type > article:nth-of-type(2) h3 {
@@ -176,7 +174,6 @@ html body main > section:last-of-type > article:nth-of-type(3) {
   flex-direction: column;
   justify-content: end;
   height: 40vh;
-  background-image: url("assets/img/boulangerie.jpeg");
   background-size: cover;
 }
 html body main > section:last-of-type > article:nth-of-type(3) h3 {
@@ -194,7 +191,6 @@ html body main > section:last-of-type > article:nth-of-type(4) {
   flex-direction: column;
   justify-content: end;
   height: 40vh;
-  background-image: url("assets/img/mairie.jpeg");
   background-size: cover;
 }
 html body main > section:last-of-type > article:nth-of-type(4) h3 {
@@ -212,7 +208,6 @@ html body main > section:last-of-type > article:nth-of-type(5) {
   flex-direction: column;
   justify-content: end;
   height: 40vh;
-  background-image: url("assets/img/festival.jpeg");
   background-size: cover;
 }
 html body main > section:last-of-type > article:nth-of-type(5) h3 {

@@ -25,31 +25,40 @@ function getThumbnailUrlAndAlt($post)
     return ["url" => $thumb->guid, "alt" => $alt];  
 }
 
-function getProjects()  
-{  
-    // preparing the request for the posts with the project category  
-    $category_id = get_category_by_slug("projet")->term_id;  
-    $args = [  
-        'numberposts' => 5,  
-        'category' => $category_id  
-    ];  
-  
-    // the request  
-    $posts = get_posts($args);  
-  
-    $projects = [];  
-  
-    // for each of the posts  
-    foreach($posts as $post)  
-    {  
-        $projects[] = [  
-            "data" => $post,  
-            "image" => getThumbnailUrlAndAlt($post), // retrieve the thumbnails  
-            "category" => get_the_category($post->ID)[1]->name // retrieve the name of the subcategory  
-        ];  
-    }  
-  
-    return $projects;  
+function getSubCategory($categories)
+{
+    foreach($categories as $category)
+    {
+        if($category->category_parent != null)
+            return $category;
+    }
+}
+
+function getProjects()
+{
+    // preparing the request for the posts with the project category
+    $category_id = get_category_by_slug("projet")->term_id;
+    $args = [
+        'numberposts' => 5,
+        'category' => $category_id
+    ];
+
+    // the request
+    $posts = get_posts($args);
+
+    $projects = [];
+
+    // for each of the posts
+    foreach($posts as $post)
+    {
+        $projects[] = [
+            "data" => $post,
+            "image" => getThumbnailUrlAndAlt($post), // retrieve the thumbnails
+            "category" => getSubCategory(get_the_category($post->ID))->name // retrieve the name of the subcategory
+        ];
+    }
+
+    return $projects;
 }
 
 
@@ -58,7 +67,7 @@ function getHomepageData()
     $data = [];  
     $data["a-propos"] = [];  
     $data["a-propos"]["titre"] = get_field("titre_a_propos");  
-    $data["a-propos"]["contenu"] = get_field("contenu_a_propos");
+    $data["a-propos"]["contenu"] = get_field("contenu_a_propos");  
     $data["projets"] = getProjects();  
   
     return $data;  
